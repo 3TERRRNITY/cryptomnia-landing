@@ -1,0 +1,28 @@
+//TODO: Сделать адаптив!
+
+.navbar {
+  margin-top: 24px;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #ffffff;
+
+  &__logo {
+    width: 247px;
+    height: 68px;
+
+    background-image: url(../../../public/assets/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}

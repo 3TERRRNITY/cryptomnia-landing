@@ -1,0 +1,57 @@
+//TODO: адаптив
+
+.hero {
+  width: 100%;
+  height: 543px;
+
+  position: relative;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  border-radius: 15px;
+
+  &__background {
+    background-image: url(../../../public/assets/hero-mask.png);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    grid-row: 2;
+    font-size: 48px;
+    font-weight: 600;
+    z-index: +1;
+
+    line-height: 69px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    grid-column: 1/3;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__dots {
+    background-image: url(../../../public/assets/hero-dots.svg);
+    background-repeat: no-repeat;
+    height: 9px;
+    margin-bottom: 19px;
+  }
+
+  &__highlight {
+    color: #29388d;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100%;
+  }
+}
