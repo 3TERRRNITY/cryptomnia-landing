@@ -1,0 +1,65 @@
+.experts {
+  padding: 64px 192px 0 40px;
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.map {
+  padding: 0;
+  margin: 24px auto 0 auto;
+  width: 965px;
+  height: 520px;
+
+  background-image: url(../../../public/assets/map.png);
+  background-size: cover;
+}
+.team {
+  margin-top: 64px;
+
+  &__title {
+    margin: 0 auto;
+
+    width: 1029px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  &__subtitle {
+    width: 712px;
+    margin: 32px auto 0 auto;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  &__experts {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+    row-gap: 40px;
+  }
+}

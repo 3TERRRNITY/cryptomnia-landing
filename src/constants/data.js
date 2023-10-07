@@ -1,0 +1,58 @@
+export const TEAM_INFO = [
+  {
+    name: "Andrey Ratov",
+    position: "CEO",
+    head: true,
+    href: "https://linkedin.com",
+    img: "../../public/assets/team/Andrey.png",
+  },
+  {
+    name: "Junichi Kimura",
+    position: "Partner",
+    head: false,
+    href: "https://linkedin.com",
+    img: "../../public/assets/team/Junichi.png",
+  },
+  {
+    name: "Tres Cunningham",
+    position: "Ambassador",
+    head: false,
+    href: "https://linkedin.com",
+    img: "../../public/assets/team/Tres.png",
+  },
+  {
+    name: "Artem Telgerekov",
+    position: "Project Manager",
+    head: false,
+    href: "https://linkedin.com",
+    img: "../../public/assets/team/Artem.png",
+  },
+  {
+    name: "Juliya Khohlova",
+    position: "Designer",
+    head: false,
+    href: "https://linkedin.com",
+    img: "../../public/assets/team/Julia.png",
+  },
+  {
+    name: "Igor N.",
+    position: "CTO",
+    head: false,
+    href: "",
+    img: "../../public/assets/team/Igor.png",
+  },
+  {
+    name: "Lisa Adinagueva",
+    position: "Web-designer",
+    head: false,
+    href: "",
+    img: "../../public/assets/team/Lisa.png",
+  },
+  {
+    name: "Vasiliy Popov",
+    position: "Producer",
+    head: false,
+    inst: "https://instagram.com",
+    img: "../../public/assets/team/Vasiliy.png",
+  },
+];

@@ -1,6 +1,7 @@
 import Hero from "./components/Hero/Hero";
 import Layout from "./components/Layout/Layout";
 import Navbar from "./components/Navbar/Navbar";
+import OurExperts from "./components/OurExperts/OurExperts";
 import OurVision from "./components/OurVision/OurVision";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <OurVision />
+      <OurExperts />
     </Layout>
   );
 }
