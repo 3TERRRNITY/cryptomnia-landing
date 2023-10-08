@@ -1,0 +1,23 @@
+.contact {
+  margin: 64px 0;
+  background-color: #2d1a090d;
+  background-image: url(../../../public/assets//contact-us.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 64px 72px;
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    text-transform: uppercase;
+  }
+  &__buttons {
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+  }
+}

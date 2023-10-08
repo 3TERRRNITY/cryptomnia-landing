@@ -1,3 +1,4 @@
+import ContactUs from "./components/ContactUs/ContactUs";
 import Hero from "./components/Hero/Hero";
 import Layout from "./components/Layout/Layout";
 import Navbar from "./components/Navbar/Navbar";
@@ -6,12 +7,15 @@ import OurVision from "./components/OurVision/OurVision";
 
 function App() {
   return (
-    <Layout>
-      <Navbar />
-      <Hero />
-      <OurVision />
-      <OurExperts />
-    </Layout>
+    <>
+      <Layout>
+        <Navbar />
+        <Hero />
+        <OurVision />
+        <OurExperts />
+      </Layout>
+      <ContactUs />
+    </>
   );
 }
 
