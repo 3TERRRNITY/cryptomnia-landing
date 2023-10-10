@@ -19,21 +19,21 @@ const ExpertCard = () => {
             <img
               className={styles.card__href}
               alt="icon"
-              src="../../../public/assets/icons/head.svg"
+              src="/assets/icons/head.svg"
             />
           )}
           {participant.href && (
             <img
               className={styles.card__href}
               alt="icon"
-              src="../../../public/assets/icons/linkedin.svg"
+              src="/assets/icons/linkedin.svg"
             />
           )}
           {participant.inst && (
             <img
               className={styles.card__href}
               alt="icon"
-              src="../../../public/assets/icons/inst.svg"
+              src="/assets/icons/inst.svg"
             />
           )}
         </div>

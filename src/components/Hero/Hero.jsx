@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
       <img
         className={styles.hero__image}
-        src="../../../public/assets/hero-img.png"
+        src="/assets/hero-img.png"
         alt="hero image"
       />
     </div>
