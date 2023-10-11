@@ -99,7 +99,7 @@ export const ONBOARDING_CARDS = [
 export const CUSTOMERS = [
   "/assets/customers/ubd.png",
   "/public/assets/customers/values.png",
-  "/public/assets/customers/neurotrade.png",
+  "/public/assets/customers/neutrade.png",
   "/public/assets/customers/Polygon.png",
   "/public/assets/customers/Prime.png",
 ];

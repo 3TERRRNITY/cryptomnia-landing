@@ -6,7 +6,7 @@ const SliderComponent = ({ title, images, buttonTitle }) => {
   return (
     <div className={styles.sliderComponent}>
       <div className={styles.sliderComponent__title}>{title}</div>
-      <Slider images={images} />
+
       {buttonTitle && <Button>{buttonTitle}</Button>}
     </div>
   );

@@ -5,8 +5,10 @@ import Navbar from "./components/Navbar/Navbar";
 import OurExperts from "./components/OurExperts/OurExperts";
 import OurServices from "./components/OurServices/OurServices";
 import OurVision from "./components/OurVision/OurVision";
+import Slider from "./components/Slider/Slider";
 
 import Onboarding from "./components/on-boarding/Onboarding";
+import { CUSTOMERS } from "./constants/data";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
       <Layout>
         <OurServices />
         <Onboarding />
+        <Slider images={CUSTOMERS} />
       </Layout>
     </>
   );
