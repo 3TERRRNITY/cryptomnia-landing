@@ -6,6 +6,8 @@ import OurExperts from "./components/OurExperts/OurExperts";
 import OurServices from "./components/OurServices/OurServices";
 import OurVision from "./components/OurVision/OurVision";
 
+import Onboarding from "./components/on-boarding/Onboarding";
+
 function App() {
   return (
     <>
@@ -18,6 +20,7 @@ function App() {
       <ContactUs />
       <Layout>
         <OurServices />
+        <Onboarding />
       </Layout>
     </>
   );
