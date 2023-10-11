@@ -24,6 +24,8 @@ ul {
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
   margin: 0;
-  width: 100%;
   gap: 24px;
+}
+.swiper-slide {
+  max-width: max-content;
 }

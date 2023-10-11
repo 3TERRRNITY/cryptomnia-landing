@@ -96,6 +96,8 @@ export const ONBOARDING_CARDS = [
   },
 ];
 
+//TODO: Поменять фото - взять с фигмы целые блоки
+
 export const CUSTOMERS = [
   "/assets/customers/ubd.png",
   "/public/assets/customers/values.png",
@@ -111,7 +113,7 @@ export const BAKERS = [
 export const PARTNERS = [
   "/public/assets/partners/wow.png",
   "/public/assets/partners/logo 2.png",
-  "/public/assets/partners/Lifty.png",
+
   "/public/assets/partners/coinpost.png",
   "/public/assets/partners/cryptotimes.png",
   "/public/assets/partners/crowny.png",
