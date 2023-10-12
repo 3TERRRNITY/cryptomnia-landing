@@ -1,22 +1,21 @@
+@import "/src/styles/confing.scss";
+@import "/src/styles/mixins.scss";
+
 .experts {
-  padding: 64px 192px 0 40px;
+  padding: $margin-64 clamp(4rem, 0.0208rem + 13.2639vw, 15.9375rem) 0
+    $margin-40;
   &__title {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 52px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-transform: uppercase;
+    @include title;
   }
   &__subtitle {
-    margin-top: 32px;
+    margin-top: clamp(0.6875rem, 0rem + 2.2917vw, 2.75rem);
 
     display: flex;
     flex-direction: column;
 
-    gap: 20px;
+    gap: clamp(0.4375rem, 0.0417rem + 1.3194vw, 1.625rem);
 
-    font-size: 16px;
+    font-size: $space-16;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0em;
@@ -25,41 +24,41 @@
 }
 .map {
   padding: 0;
-  margin: 24px auto 0 auto;
-  width: 965px;
-  height: 520px;
+  margin: $space-24 auto 0 auto;
+  width: clamp(20.0625rem, -0.0208rem + 66.9444vw, 80.3125rem);
+  height: clamp(10.8125rem, 0.0208rem + 35.9722vw, 43.1875rem);
 
   background-image: url(./assets/map.png);
   background-size: cover;
 }
 .team {
-  margin-top: 64px;
+  margin-top: $margin-64;
 
   &__title {
     margin: 0 auto;
 
-    width: 1029px;
-    font-size: 24px;
+    width: clamp(21.4375rem, -0.0208rem + 71.5278vw, 85.8125rem);
+    font-size: $space-24;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: 0em;
     text-align: center;
   }
   &__subtitle {
-    width: 712px;
-    margin: 32px auto 0 auto;
+    width: clamp(15rem, 0.0208rem + 49.9306vw, 59.9375rem);
+    margin: clamp(0.6875rem, 0rem + 2.2917vw, 2.75rem) auto 0 auto;
 
-    font-size: 16px;
+    font-size: $space-16;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: center;
   }
   &__experts {
-    margin-top: 40px;
+    margin-top: $margin-40;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 24px;
-    row-gap: 40px;
+    column-gap: $space-24;
+    row-gap: $margin-40;
   }
 }

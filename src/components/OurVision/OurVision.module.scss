@@ -1,14 +1,17 @@
+@import "/src/styles/confing.scss";
+@import "/src/styles/mixins.scss";
+
 .vision {
-  width: 1120px;
-  margin-top: 64px;
+  width: clamp(23.3125rem, 0rem + 77.7083vw, 93.25rem);
+  margin-top: $margin-64;
   display: grid;
   grid-template-columns: 0.5fr 1fr;
 
-  padding: 0 0 0 40px;
+  padding: 0 0 0 $margin-40;
 
   &__title {
     font-family: Montserrat;
-    font-size: 36px;
+    font-size: clamp(0.75rem, 0rem + 2.5vw, 3rem);
     font-weight: 600;
     line-height: 52px;
     letter-spacing: 0em;
@@ -20,7 +23,7 @@
 
   &__subtitle {
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: $space-16;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: 0em;
@@ -28,17 +31,17 @@
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(0.4375rem, 0.0417rem + 1.3194vw, 1.625rem);
   }
 }
 
 .migration {
-  padding: 0 0 0 40px;
+  padding: 0 0 0 $margin-40;
 
-  margin-top: 64px;
+  margin-top: $margin-64;
 
   font-family: Montserrat;
-  font-size: 36px;
+  font-size: clamp(0.75rem, 0rem + 2.5vw, 3rem);
   font-weight: 500;
   line-height: 59px;
   letter-spacing: 0em;
@@ -47,5 +50,5 @@
 
   color: #29388d;
 
-  width: 880px;
+  width: clamp(18.3125rem, 0.0417rem + 60.9028vw, 73.125rem);
 }

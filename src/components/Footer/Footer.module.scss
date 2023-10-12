@@ -1,13 +1,16 @@
+@import "/src/styles/confing.scss";
+@import "/src/styles/mixins.scss";
+
 .footer {
   display: flex;
   justify-content: space-between;
 
   background-color: #ffffff;
-  padding: 24px 0;
+  padding: $space-24 0;
 
   &__logo {
-    width: 247px;
-    height: 68px;
+    width: clamp(5.125rem, -0.0208rem + 17.1528vw, 20.5625rem);
+    height: clamp(1.5rem, -0.0208rem + 5.0694vw, 6.0625rem);
 
     background-image: url(./assets/logo.png);
     background-size: contain;
@@ -19,14 +22,15 @@
   &__items {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: $space-24;
+    font-size: clamp(0.3125rem, -0.0208rem + 1.1111vw, 1.3125rem);
   }
 
   &__copyrights {
     display: flex;
     align-items: center;
 
-    font-size: 16px;
+    font-size: clamp(0.3125rem, -0.0208rem + 1.1111vw, 1.3125rem);
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;

@@ -1,7 +1,9 @@
+@import "/src/styles/confing.scss";
+@import "/src/styles/mixins.scss";
 .slider {
   display: flex;
   overflow: hidden;
-  margin-bottom: 40px;
+  margin-bottom: $margin-40;
 
   &__slide {
     display: flex;

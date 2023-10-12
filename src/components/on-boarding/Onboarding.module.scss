@@ -1,35 +1,32 @@
-.onboarding {
-  margin: 64px 0;
-  &__title {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 52px;
-    letter-spacing: 0em;
-    text-align: left;
+@import "/src/styles/confing.scss";
+@import "/src/styles/mixins.scss";
 
-    text-transform: uppercase;
+.onboarding {
+  margin: $margin-64 0;
+  &__title {
+    @include title;
   }
   &__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    gap: 24px;
-    margin-top: 40px;
+    gap: $space-24;
+    margin-top: $margin-40;
   }
 
   &__card {
     border: 1px solid #dfdfdf;
     border-radius: 15px;
-    padding: 24px;
+    padding: $space-24;
 
-    height: 306px;
+    height: clamp(6.375rem, -0.0208rem + 21.3194vw, 25.5625rem);
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     &__title {
-      font-size: 16px;
+      font-size: $space-16;
       font-weight: 400;
       line-height: 26px;
       letter-spacing: 0em;
@@ -37,11 +34,11 @@
       color: #29388d;
     }
     &__icon {
-      width: 32px;
-      height: 32px;
+      width: clamp(0.6875rem, 0rem + 2.2917vw, 2.75rem);
+      height: clamp(0.6875rem, 0rem + 2.2917vw, 2.75rem);
     }
     &__description {
-      margin-top: 16px;
+      margin-top: $space-16;
     }
     &__big {
       grid-column: span 2;
