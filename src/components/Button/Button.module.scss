@@ -1,9 +1,13 @@
 .button {
   display: flex;
-  width: 248px;
-  padding: 11px 0;
+
+  // width: 248px;
+  width: clamp(5.1875rem, 0.0417rem + 17.1528vw, 20.625rem);
+  // padding: 11px 0;
+  padding: clamp(0.1875rem, -0.0208rem + 0.6944vw, 0.8125rem) 0;
   justify-content: center;
-  gap: 10px;
+  // gap: 10px;
+  gap: clamp(0.1875rem, -0.0208rem + 0.6944vw, 0.8125rem);
 
   cursor: pointer;
 
@@ -11,7 +15,7 @@
   border: none;
   border-radius: 10px;
 
-  font-size: 16px;
+  font-size: clamp(0.3125rem, -0.0208rem + 1.1111vw, 1.3125rem);
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0em;

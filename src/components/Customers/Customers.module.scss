@@ -1,14 +1,12 @@
+@import "/src/styles/confing.scss";
+@import "/src/styles/mixins.scss";
+
 .sliderComponent {
-  margin: 64px 0;
+  margin: $margin-64 0;
   &__title {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 52px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 40px;
+    @include title;
   }
   &__button {
-    margin-top: 40px;
+    margin-top: $margin-40;
   }
 }

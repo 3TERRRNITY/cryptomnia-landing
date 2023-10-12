@@ -1,23 +1,23 @@
+@import "/src/styles/confing.scss";
+@import "/src/styles/mixins.scss";
 .contact {
-  margin: 64px 0;
+  // margin: 64px 0;
+  margin: $margin-64 0;
   background-color: #2d1a090d;
   background-image: url(./assets/contact-us.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 64px 72px;
+  // padding: 64px 72px;
+  padding: $margin-64 clamp(1.5rem, -0.0208rem + 5.0694vw, 6.0625rem);
 
   &__title {
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 52px;
-    letter-spacing: 0em;
-    text-align: left;
-
-    text-transform: uppercase;
+    @include title;
   }
   &__buttons {
     display: flex;
-    gap: 24px;
-    margin-top: 32px;
+    // gap: 24px;
+    gap: $space-24;
+    // margin-top: 32px;
+    margin-top: clamp(0.6875rem, 0rem + 2.2917vw, 2.75rem);
   }
 }

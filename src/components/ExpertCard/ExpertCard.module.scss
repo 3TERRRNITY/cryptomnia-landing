@@ -1,31 +1,35 @@
-.card {
-  width: 306px;
+@import "/src/styles/confing.scss";
 
+.card {
+  width: clamp(6.375rem, -0.0208rem + 21.3194vw, 25.5625rem);
   &__image {
-    width: 306px;
-    height: 306px;
+    width: clamp(6.375rem, -0.0208rem + 21.3194vw, 25.5625rem);
+    height: clamp(6.375rem, -0.0208rem + 21.3194vw, 25.5625rem);
   }
   &__text {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
+    margin-top: $space-24;
   }
   &__name {
-    font-size: 16px;
+    font-size: clamp(0.3125rem, 0rem + 1.0417vw, 1.25rem);
     font-weight: 500;
     line-height: 23px;
     letter-spacing: 0em;
     text-align: left;
   }
   &__position {
-    margin-top: 10px;
+    font-size: clamp(0.3125rem, 0rem + 1.0417vw, 1.25rem);
+    margin-top: $space-10;
     opacity: 0.5;
   }
   &__icons {
     display: flex;
-    gap: 10px;
+    gap: $space-10;
   }
   &__href {
+    width: clamp(0.8125rem, -0.0208rem + 2.7778vw, 3.3125rem);
+    height: clamp(0.8125rem, -0.0208rem + 2.7778vw, 3.3125rem);
     cursor: pointer;
   }
 }
