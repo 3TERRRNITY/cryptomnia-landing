@@ -17,7 +17,7 @@
 
   font-size: clamp(0.3125rem, -0.0208rem + 1.1111vw, 1.3125rem);
   font-weight: 500;
-  line-height: 26px;
+  line-height: clamp(0.5rem, 0.0208rem + 1.5972vw, 1.9375rem);
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;

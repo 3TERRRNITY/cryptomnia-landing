@@ -6,19 +6,19 @@
 
   &__title {
     font-size: clamp(0.75rem, 0rem + 2.5vw, 3rem);
-    font-weight: 600;
-    line-height: 52px;
-    letter-spacing: 0em;
-    text-align: left;
+    @include title;
 
-    padding: 64px 0 40px 0;
+    padding: $margin-64 0 $margin-40 0;
   }
 
   &__cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 344px);
-    gap: 24px;
+    grid-template-rows: repeat(
+      5,
+      clamp(7.125rem, -0.0417rem + 23.8889vw, 28.625rem)
+    );
+    gap: $space-24;
   }
   &__card__titleContainer {
     @include card-titleContainer;
@@ -41,7 +41,7 @@
   &__card_image3 {
     border: 1px solid #dfdfdf;
     border-radius: 15px;
-    padding: 24px;
+    padding: $space-24;
 
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@
   &__card_image1,
   &__card_image2,
   &__card_image3 {
-    width: 416px;
+    width: clamp(8.6875rem, 0.0417rem + 28.8194vw, 34.625rem);
     background-size: contain;
   }
 

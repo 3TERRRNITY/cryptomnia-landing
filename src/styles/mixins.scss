@@ -2,7 +2,7 @@
   // font-size: 36px;
   font-size: clamp(0.75rem, 0rem + 2.5vw, 3rem);
   font-weight: 600;
-  line-height: 52px;
+  line-height: clamp(1.0625rem, -0.0417rem + 3.6806vw, 4.375rem);
   letter-spacing: 0em;
   text-align: left;
 
@@ -16,7 +16,7 @@
 @mixin card-title {
   font-size: clamp(0.6875rem, 0rem + 2.2917vw, 2.75rem);
   font-weight: 500;
-  line-height: 52px;
+  line-height: clamp(1.0625rem, -0.0417rem + 3.6806vw, 4.375rem);
   letter-spacing: 0em;
   text-align: left;
   color: #29388d;
@@ -24,7 +24,7 @@
 @mixin card-description {
   font-size: $space-16;
   font-weight: 400;
-  line-height: 26px;
+  line-height: clamp(0.5625rem, 0.0208rem + 1.8056vw, 2.1875rem);
   letter-spacing: 0em;
   text-align: left;
 

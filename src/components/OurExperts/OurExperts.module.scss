@@ -17,7 +17,7 @@
 
     font-size: $space-16;
     font-weight: 400;
-    line-height: 26px;
+    line-height: clamp(0.5625rem, 0.0208rem + 1.8056vw, 2.1875rem);
     letter-spacing: 0em;
     text-align: left;
   }
@@ -40,7 +40,7 @@
     width: clamp(21.4375rem, -0.0208rem + 71.5278vw, 85.8125rem);
     font-size: $space-24;
     font-weight: 500;
-    line-height: 34px;
+    line-height: clamp(0.6875rem, 0rem + 2.2917vw, 2.75rem);
     letter-spacing: 0em;
     text-align: center;
   }
@@ -50,7 +50,7 @@
 
     font-size: $space-16;
     font-weight: 400;
-    line-height: 26px;
+    line-height: clamp(0.5625rem, 0.0208rem + 1.8056vw, 2.1875rem);
     letter-spacing: 0em;
     text-align: center;
   }

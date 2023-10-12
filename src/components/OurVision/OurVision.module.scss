@@ -13,10 +13,10 @@
     font-family: Montserrat;
     font-size: clamp(0.75rem, 0rem + 2.5vw, 3rem);
     font-weight: 600;
-    line-height: 52px;
+    line-height: clamp(1.0625rem, -0.0417rem + 3.6806vw, 4.375rem);
     letter-spacing: 0em;
     text-align: left;
-    margin-right: 132px;
+    margin-right: clamp(2.75rem, 0rem + 9.1667vw, 11rem);
 
     text-transform: uppercase;
   }
@@ -25,7 +25,7 @@
     font-family: Montserrat;
     font-size: $space-16;
     font-weight: 400;
-    line-height: 26px;
+    line-height: clamp(0.5625rem, 0.0208rem + 1.8056vw, 2.1875rem);
     letter-spacing: 0em;
     text-align: left;
 
@@ -43,7 +43,7 @@
   font-family: Montserrat;
   font-size: clamp(0.75rem, 0rem + 2.5vw, 3rem);
   font-weight: 500;
-  line-height: 59px;
+  line-height: clamp(1.25rem, 0.0417rem + 4.0278vw, 4.875rem);
   letter-spacing: 0em;
   text-align: left;
   text-transform: uppercase;
