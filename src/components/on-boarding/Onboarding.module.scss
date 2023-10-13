@@ -46,3 +46,34 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .onboarding {
+    margin: 64px 0;
+    &__title {
+      font-size: 28px;
+      line-height: 40.15px;
+    }
+    &__cards {
+      display: flex;
+      flex-direction: column;
+    }
+    &__card {
+      padding: 24px;
+      height: max-content;
+
+      &__title {
+        display: none;
+      }
+      &__icon {
+        width: 45px;
+        height: 45px;
+      }
+      &__description {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 25.82px;
+      }
+    }
+  }
+}

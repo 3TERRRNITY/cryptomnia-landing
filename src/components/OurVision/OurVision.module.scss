@@ -52,3 +52,31 @@
 
   width: clamp(18.3125rem, 0.0417rem + 60.9028vw, 73.125rem);
 }
+
+@media (max-width: 480px) {
+  .vision {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    &__title {
+      font-size: 28px;
+      line-height: 40.15px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 22.6px;
+      margin-top: 24px;
+      gap: 12px;
+    }
+  }
+
+  .migration {
+    padding: 0;
+    width: 100%;
+    font-size: 20px;
+    line-height: 32.78px;
+    margin-top: 64px;
+  }
+}

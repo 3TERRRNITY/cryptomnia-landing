@@ -148,6 +148,7 @@ const OurServices = () => {
           </div>
         </div>
         <div className={styles.services__card_image3} />
+        <div className={styles.services__card_imageMobile} />
       </div>
     </div>
   );

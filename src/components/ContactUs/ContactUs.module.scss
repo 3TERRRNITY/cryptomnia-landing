@@ -1,13 +1,11 @@
 @import "/src/styles/confing.scss";
 @import "/src/styles/mixins.scss";
 .contact {
-  // margin: 64px 0;
   margin: $margin-64 0;
   background-color: #2d1a090d;
   background-image: url(./assets/contact-us.png);
   background-size: cover;
   background-repeat: no-repeat;
-  // padding: 64px 72px;
   padding: $margin-64 clamp(1.5rem, -0.0208rem + 5.0694vw, 6.0625rem);
 
   &__title {
@@ -19,5 +17,22 @@
     gap: $space-24;
     // margin-top: 32px;
     margin-top: clamp(0.6875rem, 0rem + 2.2917vw, 2.75rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 64px 24px;
+    margin: 64px 0;
+    &__title {
+      font-size: 28px;
+      line-height: 40.15px;
+    }
+    &__buttons {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
   }
 }
