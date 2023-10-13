@@ -20,6 +20,10 @@
     background-repeat: no-repeat;
 
     cursor: pointer;
+    @media (max-width: 480px) {
+      width: 193px;
+      height: 68px;
+    }
   }
 
   &__items {
