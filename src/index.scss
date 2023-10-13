@@ -23,12 +23,11 @@ ul {
 }
 
 .swiper-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   align-items: center;
   margin: 0;
-  gap: clamp(0.5rem, 0.0208rem + 1.5972vw, 1.9375rem);
 }
 .swiper-slide {
-  max-width: max-content;
+  width: max-content;
+  height: max-content;
 }

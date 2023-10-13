@@ -7,7 +7,11 @@ const SliderComponent = ({ title, images, buttonTitle, preview }) => {
     <div className={styles.sliderComponent}>
       <div className={styles.sliderComponent__title}>{title}</div>
       <Slider images={images} preview={preview} />
-      {buttonTitle && <Button>{buttonTitle}</Button>}
+      {buttonTitle && (
+        <div className={styles.sliderComponent__button}>
+          <Button>{buttonTitle}</Button>
+        </div>
+      )}
     </div>
   );
 };

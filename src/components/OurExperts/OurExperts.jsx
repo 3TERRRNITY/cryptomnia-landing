@@ -1,4 +1,5 @@
 import ExpertCard from "../ExpertCard/ExpertCard";
+import TeamSlider from "../TeamSlider/TeamSlider";
 import styles from "./OurExperts.module.scss";
 
 const OurExperts = () => {
@@ -36,6 +37,9 @@ const OurExperts = () => {
         </div>
         <div className={styles.team__experts}>
           <ExpertCard />
+        </div>
+        <div className={styles.team__mobile}>
+          <TeamSlider />
         </div>
       </div>
     </>

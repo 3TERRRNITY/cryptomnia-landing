@@ -61,8 +61,11 @@
     column-gap: $space-24;
     row-gap: $margin-40;
   }
+  &__mobile {
+    display: none;
+  }
 }
-
+// TODO: ДОДЕЛАТЬ ВЕРСТКУ КАРТОЧКИ НА МОБИЛЕ
 @media (max-width: 480px) {
   .experts {
     padding: 0;
@@ -98,6 +101,12 @@
       font-size: 14px;
       line-height: 22.6px;
       width: 100%;
+    }
+    &__experts {
+      display: none;
+    }
+    &__mobile {
+      display: block;
     }
   }
 }

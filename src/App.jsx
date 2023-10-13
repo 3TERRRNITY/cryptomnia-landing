@@ -21,16 +21,11 @@ function App() {
         <OurServices />
         <Onboarding />
 
-        <SliderComponent
-          title="SOME OF OUR CUSTOMERS"
-          images={CUSTOMERS}
-          preview={6}
-        />
-        <SliderComponent title="WE ARE BACKERS" images={BAKERS} preview={6} />
+        <SliderComponent title="SOME OF OUR CUSTOMERS" images={CUSTOMERS} />
+        <SliderComponent title="WE ARE BACKERS" images={BAKERS} />
         <SliderComponent
           title="PARTNERS"
           images={PARTNERS}
-          preview={6}
           buttonTitle="Become a partner"
         />
       </Layout>

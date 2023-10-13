@@ -100,21 +100,21 @@ export const ONBOARDING_CARDS = [
 
 export const CUSTOMERS = [
   "/assets/customers/ubd.png",
-  "/public/assets/customers/values.png",
-  "/public/assets/customers/neutrade.png",
-  "/public/assets/customers/Polygon.png",
-  "/public/assets/customers/Prime.png",
+  "/assets/customers/values.png",
+  "/assets/customers/neutrade.png",
+  "/assets/customers/Polygon.png",
+  "/assets/customers/Prime.png",
 ];
 export const BAKERS = [
-  "/public/assets/bakers/nifty.png",
-  "/public/assets/bakers/your2.png",
-  "/public/assets/bakers/quick.png",
+  "/assets/bakers/nifty.png",
+  "/assets/bakers/your2.png",
+  "/assets/bakers/quick.png",
 ];
 export const PARTNERS = [
-  "/public/assets/partners/wow.png",
-  "/public/assets/partners/logo 2.png",
-
-  "/public/assets/partners/coinpost.png",
-  "/public/assets/partners/cryptotimes.png",
-  "/public/assets/partners/crowny.png",
+  "/assets/partners/wow.png",
+  "/assets/partners/logo 2.png",
+  "/assets/partners/lifty.png",
+  "/assets/partners/coinpost.png",
+  "/assets/partners/cryptotimes.png",
+  "/assets/partners/crowny.png",
 ];

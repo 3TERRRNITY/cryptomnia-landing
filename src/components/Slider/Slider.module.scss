@@ -3,7 +3,6 @@
 .slider {
   display: flex;
   overflow: hidden;
-  margin-bottom: $margin-40;
 
   &__slide {
     display: flex;
@@ -12,8 +11,8 @@
 
     img {
       object-fit: fill;
-      width: 100%;
-      height: 100%;
+      width: 196px;
+      height: 93px;
     }
   }
 }
