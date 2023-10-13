@@ -7,6 +7,7 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   background-color: #ffffff;
 
@@ -25,5 +26,18 @@
     display: flex;
     align-items: center;
     gap: $space-24;
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  &__mobile {
+    display: none;
+    &__icon {
+      width: 24px;
+      height: 10px;
+    }
+    @media (max-width: 480px) {
+      display: block;
+    }
   }
 }
