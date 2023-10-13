@@ -27,5 +27,7 @@
   }
   &__icon {
     align-self: center;
+    width: clamp(0.4375rem, 0.0417rem + 1.3194vw, 1.625rem);
+    height: clamp(0.4375rem, 0.0417rem + 1.3194vw, 1.625rem);
   }
 }

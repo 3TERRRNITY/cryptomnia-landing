@@ -26,6 +26,10 @@
   &__card__title {
     @include card-title;
   }
+  &__card__icon {
+    width: clamp(0.5625rem, 0.0208rem + 1.8056vw, 2.1875rem);
+    height: clamp(0.625rem, 0rem + 2.0833vw, 2.5rem);
+  }
   &__card__description {
     @include card-description;
   }

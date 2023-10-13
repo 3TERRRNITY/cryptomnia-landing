@@ -10,7 +10,11 @@ const OurServices = () => {
         <div className={styles.services__card_RD}>
           <div className={styles.services__card__titleContainer}>
             <div className={styles.services__card__title}>R&D</div>
-            <img src="/assets/icons/info.svg" alt="information" />
+            <img
+              src="/assets/icons/info.svg"
+              alt="information"
+              className={styles.services__card__icon}
+            />
           </div>
           <ul className={styles.services__card__description}>
             <li className={styles.services__card__descriptionItem}>
@@ -27,7 +31,11 @@ const OurServices = () => {
             <div className={styles.services__card__title}>
               Centralized and Decentralized <br /> exchange solutions
             </div>
-            <img src="/assets/icons/info.svg" alt="information" />
+            <img
+              src="/assets/icons/info.svg"
+              alt="information"
+              className={styles.services__card__icon}
+            />
           </div>
           <ul className={styles.services__card__description}>
             <li className={styles.services__card__descriptionItem}>
@@ -84,7 +92,11 @@ const OurServices = () => {
             <div className={styles.services__card__title}>
               Market Making <br /> and Token Listings
             </div>
-            <img src="/assets/icons/info.svg" alt="information" />
+            <img
+              src="/assets/icons/info.svg"
+              alt="information"
+              className={styles.services__card__icon}
+            />
           </div>
           <div className={styles.services__card__description}>
             We use our own trading system with diversified trading algorithms.
@@ -100,7 +112,11 @@ const OurServices = () => {
             <div className={styles.services__card__title}>
               SEO, Marketing <br /> and PR
             </div>
-            <img src="/assets/icons/info.svg" alt="information" />
+            <img
+              src="/assets/icons/info.svg"
+              alt="information"
+              className={styles.services__card__icon}
+            />
           </div>
 
           <ul className={styles.services__card__description}>
