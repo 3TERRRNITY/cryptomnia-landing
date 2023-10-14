@@ -13,7 +13,7 @@
   border-radius: 15px;
 
   &__background {
-    background-image: url(./assets/hero-mask.png);
+    background-image: url(/assets/hero-mask.png);
     object-fit: fill;
     position: absolute;
     width: 100%;
@@ -38,7 +38,7 @@
   }
 
   &__dots {
-    background-image: url(./assets/hero-dots.svg);
+    background-image: url(/assets/hero-dots.svg);
     background-repeat: no-repeat;
     background-size: contain;
     height: clamp(0.1875rem, -0.0208rem + 0.6944vw, 0.8125rem);
