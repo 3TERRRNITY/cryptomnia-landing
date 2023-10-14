@@ -3,7 +3,7 @@ import { ONBOARDING_CARDS } from "../../constants/data";
 
 const Onboarding = () => {
   return (
-    <div className={styles.onboarding}>
+    <div className={styles.onboarding} id="cases">
       <div className={styles.onboarding__title}>on-boarding process</div>
       <div className={styles.onboarding__cards}>
         {ONBOARDING_CARDS.map(({ index, description, image }) => (

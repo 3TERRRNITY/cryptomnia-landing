@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
 import NavbarMobile from "../NavbarMobile/NavbarMobile";
-import { BrowserRouter as Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +40,7 @@ const Navbar = () => {
             <a href="#services">Our services</a>
           </li>
           <li className={styles.navbar__item}>
-            <a href="cases">Our cases</a>
+            <a href="#cases">Our cases</a>
           </li>
           <li className={styles.navbar__item}>
             <a href={`/API-Bridges`}>Api/bridges/SD</a>

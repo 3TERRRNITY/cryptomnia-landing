@@ -13,7 +13,7 @@ const OurServices = () => {
     }));
   };
   return (
-    <div className={styles.services}>
+    <div className={styles.services} id="services">
       <div className={styles.services__title}>Our Services</div>
 
       <div className={styles.services__cards}>
