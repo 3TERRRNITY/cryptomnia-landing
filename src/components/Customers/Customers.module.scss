@@ -5,6 +5,7 @@
   margin: $margin-64 0;
   &__title {
     @include title;
+    margin-bottom: $margin-40;
   }
   &__button {
     margin-top: $margin-40;
