@@ -3,7 +3,10 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.footer__logo} />
+      <a href="/">
+        <div className={styles.footer__logo} />
+      </a>
+
       <ul className={styles.footer__items}>
         <li className={styles.footer__item}>
           <a href="#vision">Our vision</a>
