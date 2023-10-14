@@ -31,7 +31,7 @@ const NavbarMobile = ({ closeMobileNav }) => {
           </a>
         </li>
         <li className={styles.navbar__item}>
-          <a href="#ABS" onClick={handleLinkClick}>
+          <a href={`/API-Bridges`} onClick={handleLinkClick}>
             Api/bridges/SDK
           </a>
         </li>

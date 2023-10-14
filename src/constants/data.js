@@ -118,3 +118,54 @@ export const PARTNERS = [
   "/assets/partners/cryptotimes.png",
   "/assets/partners/crowny.png",
 ];
+
+export const BRIDGES = [
+  {
+    title: "Bifrost app",
+    type: "API",
+    access: "Closed",
+    image: "/assets/Bridges-page/1 Bifrost app 1.png",
+  },
+  {
+    title: "Lifty",
+    type: "Bridge",
+    access: "License",
+    image: "/assets/Bridges-page/3 Lifty 1.png",
+  },
+  {
+    title: "Orbs",
+    type: "API",
+    access: "Closed",
+    image: "/assets/Bridges-page/4 Orbs 1.png",
+  },
+  {
+    title: "Quick Bill",
+    type: "API",
+    access: "Closed",
+    image: "/assets/Bridges-page/5 Quick bill 1.png",
+  },
+  {
+    title: "Safe",
+    type: "API",
+    access: "Closed",
+    image: "/assets/Bridges-page/6 Safe 1.png",
+  },
+  {
+    title: "Simplex",
+    type: "API",
+    access: "Closed",
+    image: "/assets/Bridges-page/7 Simplex 1.png",
+  },
+  {
+    title: "Values",
+    type: "API",
+    access: "Closed",
+    image: "/assets/Bridges-page/8 Values 1.png",
+  },
+  {
+    title: "Wirex app",
+    type: "API",
+    access: "Closed",
+    image: "/assets/Bridges-page/9 Wirex 1.png",
+  },
+];

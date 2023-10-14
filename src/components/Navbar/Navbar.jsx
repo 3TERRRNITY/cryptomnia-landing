@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
 import NavbarMobile from "../NavbarMobile/NavbarMobile";
+import { BrowserRouter as Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,10 @@ const Navbar = () => {
   return (
     <>
       <div className={styles.navbar}>
-        <div className={styles.navbar__logo} />
+        <a href={`/`}>
+          <div className={styles.navbar__logo} />
+        </a>
+
         <ul className={styles.navbar__items}>
           <li className={styles.navbar__item}>
             <a href="#vision">Our vision</a>
@@ -40,7 +44,7 @@ const Navbar = () => {
             <a href="cases">Our cases</a>
           </li>
           <li className={styles.navbar__item}>
-            <a href="#ABS">Api/bridges/SDK</a>
+            <a href={`/API-Bridges`}>Api/bridges/SD</a>
           </li>
         </ul>
         <div className={styles.navbar__mobile} onClick={handleOpen}>
