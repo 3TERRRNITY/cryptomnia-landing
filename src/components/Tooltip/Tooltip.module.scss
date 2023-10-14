@@ -1,0 +1,20 @@
+@import "/src/styles/confing.scss";
+@import "/src/styles/mixins.scss";
+
+.tooltip {
+  position: absolute;
+  top: -40%;
+
+  right: 0;
+  z-index: +1;
+  width: clamp(9.3125rem, 0.0417rem + 30.9028vw, 37.125rem);
+  height: max-content;
+  padding: $space-24;
+  font-size: clamp(0.3125rem, -0.0208rem + 1.1111vw, 1.3125rem);
+  border: 1px solid #dfdfdf;
+  background-color: #ffffff;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
+}

@@ -33,6 +33,11 @@
   &__card__description {
     @include card-description;
   }
+  &__card__description_mobile {
+    @extend .services__card__description;
+    display: none;
+  }
+
   &__card_RD,
   &__card_solutions,
   &__card_SC,
@@ -43,6 +48,7 @@
   &__card_seo,
   &__card_integration,
   &__card_image3 {
+    position: relative;
     border: 1px solid #dfdfdf;
     border-radius: 15px;
     padding: $space-24;
@@ -145,6 +151,9 @@
     &__card__description {
       font-size: 14px;
       line-height: 22.6px;
+    }
+    &__card__description_mobile {
+      display: block;
     }
 
     &__card__icon {

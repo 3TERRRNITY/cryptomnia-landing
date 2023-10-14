@@ -1,7 +1,17 @@
 import styles from "./OurServices.module.scss";
 import Button from "../Button/Button";
+import { useState } from "react";
+import Tooltip from "../Tooltip/Tooltip";
 
 const OurServices = () => {
+  const [tooltipVisible, setTooltipVisible] = useState({});
+
+  const handleTooltipToggle = (cardId, isVisible) => {
+    setTooltipVisible((prevState) => ({
+      ...prevState,
+      [cardId]: isVisible,
+    }));
+  };
   return (
     <div className={styles.services}>
       <div className={styles.services__title}>Our Services</div>
@@ -14,6 +24,8 @@ const OurServices = () => {
               src="/assets/icons/info.svg"
               alt="information"
               className={styles.services__card__icon}
+              onMouseEnter={() => handleTooltipToggle("card_RD", true)}
+              onMouseLeave={() => handleTooltipToggle("card_RD", false)}
             />
           </div>
           <ul className={styles.services__card__description}>
@@ -24,6 +36,18 @@ const OurServices = () => {
               Smart Contract development. ETH, Polygon, BSC.
             </li>
           </ul>
+          <div className={styles.services__card__description_mobile}>
+            Burn, stake, delegate, vote functions any many others – make your
+            system flexible as dynamic as a math. We will include any logic and
+            make any functionality that you can come up with.
+          </div>
+          {tooltipVisible["card_RD"] && (
+            <Tooltip>
+              Burn, stake, delegate, vote functions any many others – make your
+              system flexible as dynamic as a math. We will include any logic
+              and make any functionality that you can come up with.
+            </Tooltip>
+          )}
         </div>
 
         <div className={styles.services__card_solutions}>
@@ -35,6 +59,8 @@ const OurServices = () => {
               src="/assets/icons/info.svg"
               alt="information"
               className={styles.services__card__icon}
+              onMouseEnter={() => handleTooltipToggle("solutions", true)}
+              onMouseLeave={() => handleTooltipToggle("solutions", false)}
             />
           </div>
           <ul className={styles.services__card__description}>
@@ -48,6 +74,19 @@ const OurServices = () => {
               Dex solutions
             </li>
           </ul>
+
+          <div className={styles.services__card__description_mobile}>
+            You have your own community of holders, traders or you are dreaming
+            about crypto exchange business? Our Engineers will help you to
+            develop a turn-key solutions for you.
+          </div>
+          {tooltipVisible["solutions"] && (
+            <Tooltip>
+              You have your own community of holders, traders or you are
+              dreaming about crypto exchange business? Our Engineers will help
+              you to develop a turn-key solutions for you.
+            </Tooltip>
+          )}
           <Button>Get a quote now</Button>
         </div>
 
@@ -96,6 +135,8 @@ const OurServices = () => {
               src="/assets/icons/info.svg"
               alt="information"
               className={styles.services__card__icon}
+              onMouseEnter={() => handleTooltipToggle("market", true)}
+              onMouseLeave={() => handleTooltipToggle("market", false)}
             />
           </div>
           <div className={styles.services__card__description}>
@@ -104,6 +145,20 @@ const OurServices = () => {
             exchanges, and the data has been added manually layer by layer while
             being tested over many months.
           </div>
+          <div className={styles.services__card__description_mobile}>
+            Our system is operatable on more that 300 CEX and Dex exchanges.
+            Based your strategy our team customize it according with exchange
+            where you want to do MM and under control of specialist will grow
+            and attractiveness of your project day by day 24/7.
+          </div>
+          {tooltipVisible["market"] && (
+            <Tooltip>
+              Our system is operatable on more that 300 CEX and Dex exchanges.
+              Based your strategy our team customize it according with exchange
+              where you want to do MM and under control of specialist will grow
+              and attractiveness of your project day by day 24/7.
+            </Tooltip>
+          )}
           <Button>Get a quote now</Button>
         </div>
 
@@ -116,6 +171,8 @@ const OurServices = () => {
               src="/assets/icons/info.svg"
               alt="information"
               className={styles.services__card__icon}
+              onMouseEnter={() => handleTooltipToggle("seo", true)}
+              onMouseLeave={() => handleTooltipToggle("seo", false)}
             />
           </div>
 
@@ -133,6 +190,18 @@ const OurServices = () => {
               Link Building
             </li>
           </ul>
+          <div className={styles.services__card__description_mobile}>
+            Our SEO auditor will check your website and come up with
+            recommendations of what changes should be made to improve website
+            performance in search engines.
+          </div>
+          {tooltipVisible["seo"] && (
+            <Tooltip>
+              Our SEO auditor will check your website and come up with
+              recommendations of what changes should be made to improve website
+              performance in search engines.
+            </Tooltip>
+          )}
           <Button>Get a quote now</Button>
         </div>
 
