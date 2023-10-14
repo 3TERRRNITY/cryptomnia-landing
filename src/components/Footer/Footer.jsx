@@ -21,7 +21,7 @@ const Footer = () => {
           <a href="#cases">Our cases</a>
         </li>
         <li className={styles.footer__item}>
-          <a href="#ABS">Api/bridges/SDK</a>
+          <a href={`/API-Bridges`}>Api/bridges/SDK</a>
         </li>
       </ul>
       <div className={styles.footer__copyrights}>
