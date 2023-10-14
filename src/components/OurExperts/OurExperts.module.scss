@@ -65,7 +65,7 @@
     display: none;
   }
 }
-// TODO: ДОДЕЛАТЬ ВЕРСТКУ КАРТОЧКИ НА МОБИЛЕ
+
 @media (max-width: 480px) {
   .experts {
     padding: 0;
@@ -97,7 +97,7 @@
       width: 100%;
     }
     &__subtitle {
-      margin: 32px 0 0 0;
+      margin: 32px 0 40px 0;
       font-size: 14px;
       line-height: 22.6px;
       width: 100%;

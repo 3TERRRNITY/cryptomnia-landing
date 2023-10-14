@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
-// import s from "./TeamSlider.module.scss";
 import styles from "../ExpertCard/ExpertCard.module.scss";
 import { TEAM_INFO } from "../../constants/data";
 

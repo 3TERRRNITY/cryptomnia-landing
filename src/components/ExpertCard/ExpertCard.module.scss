@@ -33,3 +33,29 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 480px) {
+  .card {
+    width: 306px;
+    height: 381px;
+    &__image {
+      width: 306px;
+      height: 306px;
+    }
+    &__text {
+      margin-top: 24px;
+    }
+    &__name,
+    &__position {
+      font-size: 16px;
+      line-height: 22.94px;
+    }
+    &__icons {
+      gap: 10px;
+    }
+    &__href {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
