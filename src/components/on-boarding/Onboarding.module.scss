@@ -1,7 +1,22 @@
 @import "/src/styles/confing.scss";
 @import "/src/styles/mixins.scss";
 
+.background {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  background-image: url(/assets/on-boarding.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: clamp(17.8125rem, 0rem + 59.375vw, 71.25rem);
+  @media (max-width: 480px) {
+    height: 1384px;
+  }
+}
+
 .onboarding {
+  // position: relative;
   margin: $margin-64 0;
   &__title {
     @include title;
@@ -18,6 +33,8 @@
     border: 1px solid #dfdfdf;
     border-radius: 15px;
     padding: $space-24;
+    background-color: #ffffff;
+    z-index: +1;
 
     height: clamp(6.375rem, -0.0208rem + 21.3194vw, 25.5625rem);
 
